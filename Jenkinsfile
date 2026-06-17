@@ -31,7 +31,7 @@ pipeline {
 		stage('Run-applciation') {
 			steps {
 				
-				sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
+				echo '"https://www.saucedemo.com/"'
 			
 		    }		
 		}
