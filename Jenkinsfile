@@ -31,7 +31,7 @@ pipeline {
 		stage('Run-applciation') {
 			steps {
 				
-				echo '"https://www.saucedemo.com/"'
+				sh 'echo '"https://www.saucedemo.com/"''
 			
 		    }		
 		}
