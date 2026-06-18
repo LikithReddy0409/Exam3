@@ -11,7 +11,18 @@ pipeline {
 				git branch: 'main' , url: 'https://github.com/LikithReddy0409/Exam3.git'
 				}
 		}
-		
+
+		stage('Check Chrome') {
+    steps {
+        sh '''
+        google-chrome --version
+        chromedriver --version
+        which google-chrome
+        which chromedriver
+        java -version
+        '''
+    }
+}
 		stage('Build') {
 			steps {
 				
