@@ -19,4 +19,4 @@ public class App
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
     }
-}
+} add chrome driver options
